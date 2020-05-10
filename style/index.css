@@ -43,6 +43,7 @@ header {
 
 header h1 {
     font-size: xxx-large;
+    margin: 0px 20px;
 }
 
 .container header nav a {
@@ -57,7 +58,7 @@ header h1 {
   }
 
 nav {
-    padding: 60px 10px 20px;
+    padding: 60px 25px 20px;
 }
 
 /* main content */
@@ -69,7 +70,7 @@ nav {
 .top-section {
     height: 400px;
     /* width: 100%; */
-    padding: 0px 10px;
+    padding: 10px 10px;
     background-color: #fdfdfd;
     display: flex;
     flex-direction: row;
@@ -93,7 +94,7 @@ nav {
     margin-bottom: 10px;
 }
 
-.topright button {
+.topright a {
     border: 1px solid lightgray;
     padding: 10px;
     display: inline-block;
@@ -138,11 +139,18 @@ ul li {
     align-items: center;
 }
 
+.social-media {
+    display: flex;
+    flex-direction: row;
+    align-items: baseline;
+    padding: 25px;
+}
+
 footer h3 {
     font-size: x-large;
 }
 
-footer button {
+footer a {
     display: flex;
     justify-content: center;
     border: 1px solid lightgray;
@@ -158,4 +166,32 @@ footer {
     width: 100%;
     padding: 30px 0px;
     background-color: #e6e3e3;
+}
+
+/* smaller viewports */
+
+@media only screen 
+  and (min-device-width: 320px) 
+  and (max-device-width: 480px)
+  and (-webkit-min-device-pixel-ratio: 2) {
+
+    .container {
+        width: 670px;
+    }
+
+    .top-section {
+        height: 750px;
+        /* width: 100%; */
+        /* padding: 10px 10px; */
+        background-color: #fdfdfd;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .bottom-section {
+        height: 1000px;
+        width: 100%;
+        padding: 0px;
+        background-color: #fdfdfd;
+    }
 }
