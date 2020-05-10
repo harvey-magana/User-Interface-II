@@ -21,7 +21,53 @@ font-size: 100%;
 font: inherit;  
 vertical-align: baseline;  
 }
+/* end reses */
 
-* {
-    border: 1px solid red;
+.container {
+    margin: 0;
+    padding: 0;
+}
+
+header, footer {
+    height: 100px;
+    width: 100%;
+    padding: 10px;
+    background-color: #eee;
+}
+
+.top-section {
+    height: 400px;
+    width: 100%;
+    padding: 10px;
+    background-color: #555;
+}
+
+.bottom-section {
+    height: 500px;
+    width: 100%;
+    padding: 10px;
+    background-color: #555;
+}
+
+.topleft {
+    width: 49%;
+    float: left;
+}
+
+.topright {
+    width: 49%;
+    float: right;
+}
+
+ul {
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-content: space-between;
+    justify-content: left;
+}
+
+ul li {
+    margin: 10px;
 }
