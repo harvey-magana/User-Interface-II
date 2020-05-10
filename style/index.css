@@ -69,7 +69,7 @@ nav {
 .top-section {
     height: 400px;
     /* width: 100%; */
-    padding: 0px;
+    padding: 0px 10px;
     background-color: #fdfdfd;
     display: flex;
     flex-direction: row;
@@ -85,7 +85,7 @@ nav {
     width: 48%;
     margin: 0;
     /* float: right; */
-    /* padding: 150px 10px 0px; */
+    padding: 150px 10px 0px; 
 }
 
 .topright h2 {
