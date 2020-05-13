@@ -30,6 +30,7 @@ vertical-align: baseline;
 
 .header-section, .footer-section {
     padding: 0px;
+    box-sizing: border-box;
 }
 
 /* header */
@@ -65,6 +66,7 @@ nav {
 
 .main-content {
     padding: 0px;
+    box-sizing: border-box;
 }
 
 .top-section {
@@ -75,14 +77,19 @@ nav {
     display: flex;
     flex-direction: row;
 }
+.top-section h2 {
+    font-size: x-large;
+}
 
 .topleft {
+    box-sizing: border-box;
     width: 48%;
     margin: 0;
     /* float: left; */
 }
 
 .topright {
+    box-sizing: border-box;
     width: 48%;
     margin: 0;
     /* float: right; */
@@ -148,6 +155,22 @@ ul li {
 
 footer h3 {
     font-size: x-large;
+    margin-bottom: 3px;
+}
+
+/* animation style rules referenced from MDN
+https://developer.mozilla.org/en-US/docs/Web/CSS/animation-fill-mode
+*/
+
+@keyframes grow {
+    0% { font-size: 25px; }
+    100% { font-size: 29px; }
+}
+
+footer:hover h3 {
+    animation-name: grow;
+    animation-duration: 3s;
+    animation-fill-mode: forwards;
 }
 
 footer a {
@@ -194,4 +217,5 @@ footer {
         padding: 0px;
         background-color: #fdfdfd;
     }
+
 }
