@@ -23,173 +23,10 @@ vertical-align: baseline;
 }
 /* end resets */
 
-.container {
-    width: 100%;
-    margin: 0;
+html {
+    font-size: 62.5%;
 }
 
-.header-section, .footer-section {
-    padding: 0px;
-    box-sizing: border-box;
-}
-
-/* header */
-
-header {
-    height: 170px;
-    width: 100%;
-    padding: 30px 0px;
-    background-color: #e6e3e3;
-}
-
-header h1 {
-    font-size: xxx-large;
-    margin: 0px 20px;
-}
-
-.container header nav a {
-    margin: 0px;
-    border: 1px solid lightgray;
-    padding: 10px;
-    display: inline-block;
-    color: white;
-    text-decoration: none;
-    margin-bottom: 3px;
-    background-color: rgb(87, 87, 87);
-  }
-
-nav {
-    padding: 60px 25px 20px;
-}
-
-/* main content */
-
-.main-content {
-    padding: 0px;
-    box-sizing: border-box;
-}
-
-.top-section {
-    height: 400px;
-    /* width: 100%; */
-    padding: 10px 10px;
-    background-color: #fdfdfd;
-    display: flex;
-    flex-direction: row;
-}
-.top-section h2 {
-    font-size: x-large;
-}
-
-.topleft {
-    box-sizing: border-box;
-    width: 48%;
-    margin: 0;
-    /* float: left; */
-}
-
-.topright {
-    box-sizing: border-box;
-    width: 48%;
-    margin: 0;
-    /* float: right; */
-    padding: 150px 10px 0px; 
-}
-
-.topright h2 {
-    font-size: x-large;
-    margin-bottom: 10px;
-}
-
-.topright a {
-    border: 1px solid lightgray;
-    padding: 10px;
-    display: inline-block;
-    color: white;
-    text-decoration: none;
-    margin-bottom: 10px;
-    background-color: rgb(87, 87, 87);
-}
-
-.topright p {
-    font-size: large;
-}
-
-.bottom-content {
-    margin: 0;
-    padding: 5px;
-}
-
-.bottom-section {
-    height: 700px;
-    width: 100%;
-    padding: 0px;
-    background-color: #fdfdfd;
-}
-
-ul {
-    list-style: none;
-    display: flex;
-    flex-flow: row wrap;
-    justify-content: space-between;
-}
-
-ul li {
-    margin: 10px;
-}
-
-/* footer */
-
-.footer-section {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-.social-media {
-    display: flex;
-    flex-direction: row;
-    align-items: baseline;
-    padding: 25px;
-}
-
-footer h3 {
-    font-size: x-large;
-    margin-bottom: 3px;
-}
-
-/* animation style rules referenced from MDN
-https://developer.mozilla.org/en-US/docs/Web/CSS/animation-fill-mode
-*/
-
-@keyframes grow {
-    0% { font-size: 25px; }
-    100% { font-size: 29px; }
-}
-
-footer:hover h3 {
-    animation-name: grow;
-    animation-duration: 3s;
-    animation-fill-mode: forwards;
-}
-
-footer a {
-    display: flex;
-    justify-content: center;
-    border: 1px solid lightgray;
-    padding: 10px;
-    color: white;
-    text-decoration: none;
-    margin-bottom: 10px;
-    background-color: rgb(87, 87, 87);
-}
-
-footer {
-    height: 170px;
-    width: 100%;
-    padding: 30px 0px;
-    background-color: #e6e3e3;
-}
 
 /* smaller viewports */
 
@@ -199,23 +36,84 @@ footer {
   and (-webkit-min-device-pixel-ratio: 2) {
 
     .container {
-        width: 670px;
+        width: 320px;
+    }
+
+    .header-section, .footer-section {
+        box-sizing: border-box;
+    }
+
+    header {
+        height: 7rem;
+        padding: 1.0rem;
+        background-color: #e6e3e3;
+    }
+
+    footer {
+        height: 7rem;
+        padding: 1.0rem;
+        background-color: #e6e3e3;
+    }
+
+    header h1 {
+        font-size: 3rem;
+    }
+
+    header nav {
+        font-size: 2em;
     }
 
     .top-section {
-        height: 750px;
-        /* width: 100%; */
-        /* padding: 10px 10px; */
-        background-color: #fdfdfd;
-        display: flex;
-        flex-direction: column;
+        margin: 10px;
+    }
+
+    .top-section h2 {
+        display: none;
+    }
+
+    .top-section p {
+        margin-top: 3px;
+        font-size: 1.5rem;
+    }
+
+    .top-section a {
+        font-size: 2.5rem;
     }
 
     .bottom-section {
-        height: 1000px;
-        width: 100%;
-        padding: 0px;
-        background-color: #fdfdfd;
+        display: flex;
+        justify-content: space-around;
+    }
+    .bottom-section img {
+        width: 30rem;
+        height: auto;
     }
 
+    figure {
+        margin: 5px 0px;
+    }
+
+    figcaption {
+        font-size: 2.5rem;
+    }
+
+    li:nth-last-child(n+4) {
+        display: none;
+    }
+
+    footer {
+        display: flex;
+        flex-direction: column;
+    }
+    .footer-inner h3 {
+        display: none;
+    }
+
+    .footer-inner a {
+        font-size: 1.5rem;
+    }
+
+    .social-media a {
+        font-size: 1.5rem;
+    }
 }
