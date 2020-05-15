@@ -322,7 +322,7 @@ footer {
         flex-direction: column;
     }
 
-    footer a {
+    .social-media a {
         display: flex;
         justify-content: center;
         border: 1px solid lightgray;
