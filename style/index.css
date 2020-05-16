@@ -30,6 +30,7 @@ html {
 .container {
     width: 100%;
     margin: 0;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif
 }
 
 .header-section, .footer-section {
@@ -40,15 +41,16 @@ html {
 /* header */
 
 header {
-    height: 170px;
+    height: 15rem;
     width: 100%;
     padding: 30px 0px;
-    background-color: #e6e3e3;
+    background-color: #caebf2;
 }
 
 header h1 {
     font-size: xxx-large;
     margin: 0px 20px;
+    color: #908c8c;
 }
 
 .container header nav a {
@@ -59,16 +61,19 @@ header h1 {
     color: white;
     text-decoration: none;
     margin-bottom: 3px;
-    background-color: rgb(87, 87, 87);
+    background-color: #ff3b3f;
     font-size: 1.7rem;
   }
 
 .container header nav {
-    /*padding: 60px 25px 20px;*/
-    /* CONFLICT */
+    margin: 5px 20px;
 }
 
 /* main content */
+
+section {
+    color: #efefef;
+}
 
 .main-content {
     padding: 0px;
@@ -84,6 +89,12 @@ header h1 {
     flex-direction: row;
     justify-content: space-between;
 }
+
+.top article {
+    display: flex;
+    padding: 1.1rem;
+}
+
 .top-section h2 {
     font-size: x-large;
 }
@@ -95,7 +106,7 @@ header h1 {
 }
 
 .topleft img {
-    width: 67rem;
+    width: 68rem;
 }
 
 .topright {
@@ -107,6 +118,7 @@ header h1 {
 .topright h2 {
     font-size: x-large;
     margin-bottom: 10px;
+    color: #908c8c;
 }
 
 .topright a {
@@ -116,11 +128,12 @@ header h1 {
     color: white;
     text-decoration: none;
     margin-bottom: 10px;
-    background-color: rgb(87, 87, 87);
+    background-color: #ff3b3f;
 }
 
 .topright p {
     font-size: large;
+    color: #908c8c;
 }
 
 .bottom-content {
@@ -147,6 +160,7 @@ ul li {
 
 figcaption {
     font-size: 2rem;
+    color: #908c8c;
 }
 /* footer */
 
@@ -166,6 +180,7 @@ figcaption {
 footer h3 {
     font-size: x-large;
     margin-bottom: 2rem;;
+    color: #908c8c;
 }
 
 /* animation style rules referenced from MDN
@@ -192,15 +207,15 @@ footer a {
     color: white;
     text-decoration: none;
     margin-bottom: 10px;
-    background-color: rgb(87, 87, 87);
+    background-color: #ff3b3f;
     font-size: 1.7rem;
 }
 
 footer {
-    height: 170px;
+    height: 15rem;
     width: 100%;
     padding: 30px 0px;
-    background-color: #e6e3e3;
+    background-color: #caebf2;
 }
 
 /* smaller viewports */
