@@ -1,1 +1,362 @@
 /* Add CSS styling here */
+/* Let's start off with some resets */
+
+html, body, div, span, applet, object, iframe,  
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,  
+a, abbr, acronym, address, big, cite, code,  
+del, dfn, em, img, ins, kbd, q, s, samp,  
+small, strike, strong, sub, sup, tt, var,  
+b, u, i, center,  
+dl, dt, dd, ol, ul, li,  
+fieldset, form, label, legend,  
+table, caption, tbody, tfoot, thead, tr, th, td,  
+article, aside, canvas, details, embed,  
+figure, figcaption, footer, header, hgroup,  
+menu, nav, output, ruby, section, summary,  
+time, mark, audio, video {  
+margin: 0;  
+padding: 0;  
+border: 0;  
+font-size: 100%;  
+font: inherit;  
+vertical-align: baseline;  
+}
+/* end resets */
+
+html {
+    font-size: 62.5%;
+}
+
+.container {
+    width: 100%;
+    margin: 0;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif
+}
+
+.header-section, .footer-section {
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+/* header */
+
+header {
+    height: 15rem;
+    width: 100%;
+    padding: 30px 0px;
+    background-color: #caebf2;
+}
+
+header h1 {
+    font-size: xxx-large;
+    margin: 0px 20px;
+    color: #908c8c;
+}
+
+.container header nav a {
+    margin: 0px;
+    border: 1px solid lightgray;
+    padding: 10px;
+    display: inline-block;
+    color: white;
+    text-decoration: none;
+    margin-bottom: 3px;
+    background-color: #ff3b3f;
+    font-size: 1.7rem;
+  }
+
+.container header nav {
+    margin: 5px 20px;
+}
+
+/* main content */
+
+section {
+    color: #efefef;
+}
+
+.main-content {
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+.top-section {
+    /* height: 400px; */
+    /* width: 100%; */
+    /*padding: 10px 10px;*/
+    background-color: #fdfdfd;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.top article {
+    display: flex;
+    padding: 1.1rem;
+}
+
+.top-section h2 {
+    font-size: x-large;
+}
+
+.topleft {
+    box-sizing: border-box;
+
+    margin: 0;
+}
+
+.topleft img {
+    width: 68rem;
+}
+
+.topright {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 5rem; 
+}
+
+.topright h2 {
+    font-size: x-large;
+    margin-bottom: 10px;
+    color: #908c8c;
+}
+
+.topright a {
+    border: 1px solid lightgray;
+    padding: 10px;
+    display: inline-block;
+    color: white;
+    text-decoration: none;
+    margin-bottom: 10px;
+    background-color: #ff3b3f;
+}
+
+.topright p {
+    font-size: large;
+    color: #908c8c;
+}
+
+.bottom-content {
+    margin: 0;
+    padding: 5px;
+}
+
+.bottom-section {
+    width: 100%;
+    padding: 0px;
+    background-color: #fdfdfd;
+}
+
+ul {
+    list-style: none;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+}
+
+ul li {
+    margin: 10px;
+}
+
+figcaption {
+    font-size: 2rem;
+    color: #908c8c;
+}
+/* footer */
+
+.footer-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.social-media {
+    display: flex;
+    flex-direction: row;
+    align-items: baseline;
+    padding: 25px;
+}
+
+footer h3 {
+    font-size: x-large;
+    margin-bottom: 2rem;;
+    color: #908c8c;
+}
+
+/* animation style rules referenced from MDN
+https://developer.mozilla.org/en-US/docs/Web/CSS/animation-fill-mode
+*/
+
+@keyframes grow {
+    0% { font-size: 25px; }
+    100% { font-size: 29px; }
+}
+
+footer:hover h3 {
+    animation-name: grow;
+    animation-duration: 3s;
+    animation-fill-mode: forwards;
+}
+.footer-inner {
+    text-align: center;
+}
+
+footer a {
+    border: 1px solid lightgray;
+    padding: 10px;
+    color: white;
+    text-decoration: none;
+    margin-bottom: 10px;
+    background-color: #ff3b3f;
+    font-size: 1.7rem;
+}
+
+footer {
+    height: 15rem;
+    width: 100%;
+    padding: 30px 0px;
+    background-color: #caebf2;
+}
+
+/* smaller viewports */
+
+@media only screen 
+  and (min-device-width: 320px) 
+  and (max-device-width: 800px)
+  and (-webkit-min-device-pixel-ratio: 2) {
+
+    html {
+        font-size: 62.5%;
+    }
+
+    .container {
+        width: 100%;
+    }
+
+    .header-section, .footer-outer{
+        box-sizing: border-box;
+    }
+
+    header {
+        background-color: #e6e3e3;
+    }
+
+    footer {
+        height: 7rem;
+        background-color: #e6e3e3;
+    }
+
+    header h1 {
+        font-size: 3rem;
+        margin: 0.5rem 1rem;
+    }
+
+    header nav {
+        font-size: 2em;
+        display: flex;
+        flex-wrap: wrap;
+        margin: 0.1rem 1rem;
+    }
+
+    header nav a {
+        margin: 1px;
+        border: 3px solid lightgray;
+        padding: 3px;
+        display: inline-block;
+        color: white;
+        text-decoration: none;
+        margin-bottom: 3px;
+        background-color: rgb(87, 87, 87);
+        flex: 0 0 33.333333%;
+    }
+
+    .top-section {
+        /* margin: 10px; */
+    }
+
+    .top-section h2 {
+        display: none;
+    }
+
+    .top-section p {
+        margin-top: 3px;
+        font-size: 2.5rem;
+    }
+
+    .top-section a {
+        font-size: 2.5rem;
+    }
+
+    .topleft {
+        display: none;
+    }
+
+    .topright a {
+        border: 1px solid lightgray;
+        padding: 10px;
+        display: inline-block;
+        color: white;
+        text-decoration: none;
+        margin-bottom: 10px;
+        background-color: rgb(87, 87, 87);
+        font-size: 2.0rem;
+    }
+
+    .bottom-section {
+        display: flex;
+        justify-content: space-around;
+    }
+    .bottom-section ul li {
+        list-style: none;
+    }
+
+    .bottom-section img {
+        width: 34rem;
+        height: auto;
+    }
+
+    .bottom-section p:nth-last-child(n+1) {
+        display: none;
+    }
+
+    figure {
+        margin: 5px 0px;
+    }
+
+    figcaption {
+        font-size: 1.9rem;
+    }
+
+    li:nth-last-child(n+4) {
+        display: none;
+    }
+
+    footer {
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .social-media a {
+        display: flex;
+        justify-content: center;
+        border: 1px solid lightgray;
+        padding: 10px;
+        color: white;
+        text-decoration: none;
+        margin-bottom: 10px;
+        background-color: rgb(87, 87, 87);
+    }
+
+    .footer-inner h3 {
+        display: none;
+    }
+
+    .footer-inner a {
+        font-size: 1.5rem;
+    }
+
+    .social-media a {
+        font-size: 1.5rem;
+    }
+}
